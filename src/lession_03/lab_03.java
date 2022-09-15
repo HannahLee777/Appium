@@ -19,7 +19,6 @@ public class lab_03 {
                 count_Odd++;
             }
         }
-
         System.out.println("Even number count :" + count_Even);
         System.out.println("Odd number count :" + count_Odd);
         //System.out.println(myIntArray.length);
@@ -31,7 +30,6 @@ public class lab_03 {
             if (maxNumber < myIntArray[i]) {
                 maxNumber = myIntArray[i];
             } else if (minNumber > myIntArray[i]) {
-
                 minNumber = myIntArray[i];
             }
         }
