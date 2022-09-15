@@ -49,7 +49,6 @@ public class lab_03 {
                 if (myIntArray[j] > myIntArray[j + 1]) {
                     temp1 = myIntArray[j];
                     temp2= myIntArray[j+1];
-                    //myIntArray[j] = myIntArray[j + 1];
                     myIntArray[j] = temp2;
                     myIntArray[j + 1] = temp1;
                     a=false;
