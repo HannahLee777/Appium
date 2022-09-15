@@ -22,7 +22,7 @@ public class lab_03 {
         }
 
         System.out.println("Even number count :" + count_Even);
-        System.out.println("Event odd count :" + count_Odd);
+        System.out.println("Odd number count :" + count_Odd);
         //System.out.println(myIntArray.length);
 
         //lab3.2
