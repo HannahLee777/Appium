@@ -9,9 +9,8 @@ public class lab_03 {
         //lab 3.1
         int count_Even = 0;
         int count_Odd = 0;
-        //final int ARRAY_LENGTH = 10;
         int[] myIntArray = new int[]{5, 1, 55, 6, 18, 13, 10, 17, 20, 33};
-        //System.out.println(Arrays.toString(myIntArray));
+        System.out.println(Arrays.toString(myIntArray));
         for (int value : myIntArray) {
             //System.out.println(value);
             if (value % 2 == 0) {
