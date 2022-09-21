@@ -9,7 +9,7 @@ public class lab_03 {
         //lab 3.1
         int count_Even = 0;
         int count_Odd = 0;
-        int[] myIntArray = new int[]{5, 1, 55, 6, 18, 13, 10, 17, 20, 33};
+        int[] myIntArray = new int[]{5, 1, 55, 6, 18, 13, 10, 17,1, 20, 33};
         System.out.println(Arrays.toString(myIntArray));
         for (int value : myIntArray) {
             //System.out.println(value);
@@ -53,5 +53,14 @@ public class lab_03 {
             }
         }
         System.out.println("Sort array min to max :" +Arrays.toString(myIntArray));
+
+        int[] myIntArray2 = new int[]{2,3,5,6,8};
+
+        final int MERGE_ARRAY_LENGTH= myIntArray.length+myIntArray2.length;
+        System.out.println(MERGE_ARRAY_LENGTH);
+        int[] mergeArray = new int[MERGE_ARRAY_LENGTH];
+
+
+
     }
 }
