@@ -60,13 +60,11 @@ public class lab_05 {
         boolean a= true;
         while (a) {
             String numInput = scanner2.nextLine();
-            //int num = numInput.parse
             if (numInput.equals("done")){
                 a=false;
             }
             else {
                 myList.add(Integer.parseInt(numInput));
-                //myList.add(numInput);
                 System.out.println(myList);
             }
 
@@ -75,7 +73,6 @@ public class lab_05 {
 
 
     public static void printNumber(){
-        //myList=new ArrayList<>();
         System.out.println(myList);
     }
 
