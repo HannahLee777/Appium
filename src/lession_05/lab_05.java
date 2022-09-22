@@ -2,9 +2,7 @@ package lession_05;
 
 import com.sun.xml.internal.ws.addressing.WsaTubeHelperImpl;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class lab_05 {
     //List<Integer> myList = new ArrayList<>();
@@ -99,18 +97,18 @@ public class lab_05 {
         int searchNumber = scanner3.nextInt();
         int index = myList.indexOf(searchNumber);
 
-        //boolean foundNumber=myList.contains(searchNumber);
-
         if (myList.isEmpty()) {
             System.out.println("ArrayList is Empty");
-        } else if (index >= 0) {
-            System.out.println(searchNumber + " is found with index: " + index);
-        } else if (index <0) {
+        } else if (index<0) {
             System.out.println(searchNumber + " is not found");
         }
 
+        for (int i = 0; i < myList.size(); i++){
+            if (searchNumber==myList.get(i) ){
+                System.out.println(searchNumber + " is found with index: " + i);
+            }
+        }
     }
-
 }
 
 
