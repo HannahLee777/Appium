@@ -9,24 +9,34 @@ public class lab_05 {
     public static void main(String[] args) {
 
         boolean isContinuing = true;
+
         while (isContinuing){
             printMenu();
             int userOption = getUserOption();
             if (userOption==0){
                 isContinuing=false;
-            } else if (userOption==1) {
-                inputNumber();
-            } else if (userOption==2) {
-                printNumber();
-            } else if (userOption==3) {
-                getMinMaxNumber();
-                System.out.println("max number: "+maxNumber);
-            }
-            else if (userOption==4){
-                getMinMaxNumber();
-                System.out.println("min number: "+minNumber);
-            } else if (userOption==5) {
-                searchForNumber();
+            } else {
+                switch (userOption) {
+                    case 1:
+                        inputNumber();
+                        break;
+                    case 2:
+                        printNumber();
+                        break;
+                    case 3:
+                        getMinMaxNumber();
+                        System.out.println("max number: " + maxNumber);
+                        break;
+                    case 4:
+                        getMinMaxNumber();
+                        System.out.println("min number: " + minNumber);
+                        break;
+                    case 5:
+                        searchForNumber();
+                        break;
+                    default:
+                        System.out.println("Please enter menu option again");
+                }
             }
         }
     }
