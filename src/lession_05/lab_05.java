@@ -1,5 +1,7 @@
 package lession_05;
 
+import com.sun.xml.internal.ws.addressing.WsaTubeHelperImpl;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -25,10 +27,10 @@ public class lab_05 {
             else if (userOption==4){
                 getMinMaxNumber();
                 System.out.println("min number: "+minNumber);
+            } else if (userOption==5) {
+                searchForNumber();
             }
         }
-
-
     }
 
     public static void printMenu () {
@@ -51,27 +53,24 @@ public class lab_05 {
 
     private static List<Integer> myList;
     public static void inputNumber(){
+        myList = new ArrayList<>();
+        System.out.println("Please enter an integer to add number to arraylist, 'done' to stop adding");
+        Scanner scanner2 = new Scanner(System.in);
 
-            //List<Integer> myList = new ArrayList<>();
-            //int index = myList.indexOf();
-            myList = new ArrayList<>();
-            System.out.println("Please enter an integer to add number to arraylist, 'done' to stop adding");
-            Scanner scanner2 = new Scanner(System.in);
-
-            boolean a= true;
-            while (a) {
-                String numInput = scanner2.nextLine();
-                //int num = numInput.parse
-                if (numInput.equals("done")){
-                    a=false;
-                }
-                else {
-                    myList.add(Integer.parseInt(numInput));
-                    //myList.add(numInput);
-                    System.out.println(myList);
-                }
-
+        boolean a= true;
+        while (a) {
+            String numInput = scanner2.nextLine();
+            //int num = numInput.parse
+            if (numInput.equals("done")){
+                a=false;
             }
+            else {
+                myList.add(Integer.parseInt(numInput));
+                //myList.add(numInput);
+                System.out.println(myList);
+            }
+
+        }
     }
 
 
@@ -82,19 +81,37 @@ public class lab_05 {
 
     private static int maxNumber,minNumber;
     public static void getMinMaxNumber() {
-            System.out.println(myList);
-            maxNumber = myList.get(0);
-            //System.out.println(maxNumber);
-            minNumber = myList.get(0);
-            for (int i = 0; i < myList.size(); i++) {
-                if (maxNumber < myList.get(i)) {
-                    maxNumber = myList.get(i);
-                } else if (minNumber > myList.get(i)) {
-                    minNumber = myList.get(i);
-                }
+        System.out.println(myList);
+        maxNumber = myList.get(0);
+        minNumber = myList.get(0);
+
+        for (int i = 0; i < myList.size(); i++) {
+            if (maxNumber < myList.get(i)) {
+                maxNumber = myList.get(i);
+            } else if (minNumber > myList.get(i)) {
+                minNumber = myList.get(i);
             }
+        }
             //System.out.println("Max value: " + maxNumber);
             //System.out.println("Min value: " + minNumber);
+    }
+
+    public  static void searchForNumber(){
+        System.out.println("Please enter a number to search in the ArrayList: ");
+        Scanner scanner3 = new Scanner(System.in);
+        int searchNumber = scanner3.nextInt();
+        int index = myList.indexOf(searchNumber);
+
+        //boolean foundNumber=myList.contains(searchNumber);
+
+        if (myList.isEmpty()) {
+            System.out.println("ArrayList is Empty");
+        } else if (index >= 0) {
+            System.out.println(searchNumber + " is found with index: " + index);
+        } else if (index <0) {
+            System.out.println(searchNumber + " is not found");
+        }
+
     }
 
 }
