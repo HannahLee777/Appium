@@ -48,14 +48,12 @@ public class lab_05 {
                     "4. Get minimum number\n" +
                     "5. Search for a number in the number list\n" +
                     "0. Exit");
-
         }
 
     public static int getUserOption() {
         System.out.println("Please enter number to select menu:");
         Scanner scanner = new Scanner(System.in);
         return scanner.nextInt();
-
     }
 
     private static List<Integer> myList;
@@ -74,7 +72,6 @@ public class lab_05 {
                 myList.add(Integer.parseInt(numInput));
                 System.out.println(myList);
             }
-
         }
     }
 
