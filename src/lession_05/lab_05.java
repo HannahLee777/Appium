@@ -81,6 +81,7 @@ public class lab_05 {
     }
 
     private static int maxNumber,minNumber;
+
     public static void getMinMaxNumber() {
         System.out.println(myList);
         maxNumber = myList.get(0);
