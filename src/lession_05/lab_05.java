@@ -5,7 +5,6 @@ import com.sun.xml.internal.ws.addressing.WsaTubeHelperImpl;
 import java.util.*;
 
 public class lab_05 {
-    //List<Integer> myList = new ArrayList<>();
     public static void main(String[] args) {
 
         boolean isContinuing = true;
