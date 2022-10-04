@@ -1,4 +1,4 @@
-package lession_08;
+package lession_08_lab08_01;
 
 public class FTE extends Employee{
 

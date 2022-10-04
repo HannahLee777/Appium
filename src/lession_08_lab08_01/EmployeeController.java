@@ -1,7 +1,6 @@
-package lession_08;
+package lession_08_lab08_01;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class EmployeeController {
