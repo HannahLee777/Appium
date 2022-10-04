@@ -1,12 +1,8 @@
 package lession_08_lab08_02;
 
-import lession_08.Employee;
-import lession_08.EmployeeController;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Objects;
 
 public class RacingController {
 
@@ -42,6 +38,6 @@ public class RacingController {
                 winnerName = animalList.get(i).getClass().getSimpleName();
             }
         }
-        System.out.println("Winner is: " + winnerName + "with speed: " + maxSpeed);
+        System.out.println("Winner is: " + winnerName + " with speed: " + maxSpeed);
     }
 }
