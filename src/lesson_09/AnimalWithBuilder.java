@@ -6,12 +6,12 @@ public class AnimalWithBuilder {
 
     public String name;
     private int speed;
-    private boolean withWings;
+    private boolean isWithWings;
 
     protected AnimalWithBuilder(Builder builder){
         this.name = builder.name;
         this.speed = builder.speed;
-        this.withWings = builder.withWings;
+        this.isWithWings = builder.isWithWings;
     }
 
     //read-only
@@ -25,7 +25,7 @@ public class AnimalWithBuilder {
     }
 
     public boolean isWithWings() {
-        return withWings;
+        return isWithWings;
     }
 
 
@@ -39,7 +39,7 @@ public class AnimalWithBuilder {
 
         private String name;
         private int speed;
-        private boolean withWings;
+        private boolean isWithWings;
 
         //write only
         public Builder setName(String name) {
@@ -52,10 +52,11 @@ public class AnimalWithBuilder {
             return this;
         }
 
-        public Builder setWithWings(boolean withWings) {
-            this.withWings = withWings;
+        public Builder setWithWings(boolean isWithWings) {
+            this.isWithWings = isWithWings;
             return this;
         }
+
     }
 
 
