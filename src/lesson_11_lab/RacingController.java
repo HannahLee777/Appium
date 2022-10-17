@@ -1,10 +1,6 @@
-package Lesson_11_lab;
+package lesson_11_lab;
 
-import lesson_09.AnimalWithBuilder;
-
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 

@@ -1,4 +1,4 @@
-package Lesson_11_lab;
+package lesson_11_lab;
 
 public abstract class Animal {
     public String name;

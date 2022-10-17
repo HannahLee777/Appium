@@ -1,4 +1,4 @@
-package Lesson_11_lab;
+package lesson_11_lab;
 
 import java.security.SecureRandom;
 
